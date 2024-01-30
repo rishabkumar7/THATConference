@@ -12,11 +12,6 @@ load_dotenv()
 def generate_pet_name(animal_type, pet_color, openai_api_key):
   llm = OpenAI(temperature=0.7, openai_api_key=openai_api_key)
 
-  template = """
-  I have {animal_type} pet and I want a cool name for it, it is {pet_color} color. Suggest me five cool names for my pet
-  Answer: Here are five names for your pet:
-  """
-
   prompt_template = PromptTemplate.from_template("I have {animal_type} pet and I want a cool name for it, it is {pet_color} color. Suggest me five cool names for my pet"
   )
 
