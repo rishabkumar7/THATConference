@@ -9,8 +9,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Generate Pet Name Function
-def generate_pet_name(animal_type, pet_color, openai_api_key):
-  llm = OpenAI(temperature=0.7, openai_api_key=openai_api_key)
+def generate_pet_name(animal_type, pet_color):
+  llm = OpenAI(temperature=0.7)
 
   
   prompt_template = PromptTemplate(
@@ -25,4 +25,4 @@ def generate_pet_name(animal_type, pet_color, openai_api_key):
   return response
 
 if __name__ == "__main__":
-  print(generate_pet_name("Cat", "White", os.getenv("OPENAI_API_KEY")))
+  print(generate_pet_name("Cat", "White"))
