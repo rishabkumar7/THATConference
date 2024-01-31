@@ -3,3 +3,4 @@ langchain-openai
 python-dotenv
 streamlit
 openai
+urllib3==1.26.6
