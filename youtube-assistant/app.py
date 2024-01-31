@@ -3,7 +3,12 @@ import textwrap
 
 
 youtube_url="https://www.youtube.com/watch?v=1p6P471PBx0"
-query="What did Satya say about AI?"
+#query="What did Satya say about AI?"
+
+query = "How old is Satya in 2024?"
+
+#query="Did Satya mention Google?"
+#query="Did Satya mention anything about TikTok?"
 
 if query and youtube_url:
   db = youtube.create_db_from_youtube_video_url(youtube_url)
