@@ -27,4 +27,4 @@ pet_color = st.sidebar.text_area(
 
 if pet_color:
     response = pets_name.generate_pet_name(animal_type, pet_color, os.getenv("OPENAI_API_KEY"))
-    st.text(response['text'])
+    st.markdown(response)
