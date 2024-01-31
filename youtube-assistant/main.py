@@ -25,6 +25,7 @@ def create_db_from_youtube_video_url(video_url: str) -> FAISS:
 
 def get_response_from_query(db, query, k=4):
     """
+    !THIS is DEPRECATED
     text-davinci-003 can handle up to 4097 tokens. Setting the chunksize to 1000 and k to 4 maximizes
     the number of tokens to analyze.
     """
@@ -50,9 +51,10 @@ def get_response_from_query(db, query, k=4):
         Your answers should be verbose and detailed.
         """,
     )
-
+    
     chain = prompt | llm
-
+    
     response = chain.invoke({"question":query, "docs":docs_page_content})
+    
     response = response.replace("\n", "")
     return response, docs
