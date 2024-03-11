@@ -14,7 +14,7 @@ I talk about what is LangChain? And what are some of the core concepts within La
 ## Demo
 
 I have a freeCodeCamp course on LangChain that is very similar to this talk.
-![https://img.youtube.com/vi/lG7Uxts9SXs/hqdefault.jpg](https://youtu.be/lG7Uxts9SXs?feature=shared)
+[![freeCodeCamp Course - LangChain](https://img.youtube.com/vi/lG7Uxts9SXs/0.jpg)](https://www.youtube.com/watch?v=lG7Uxts9SXs)
 
 ## Author
 
